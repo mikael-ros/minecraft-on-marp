@@ -5,7 +5,13 @@ Originally made for a Minecraft presentation I held in a networking course, wher
 
 ## Preview
 ### Main menu
+(gif)
+It's even got hover effects!
+(side by side comparison)
 ### Other slides
+(first page in section)
+(a page in a section)
+Note the use of the pinging symbol as a page index.   While it looks best for 25 pages, you can expand it by adding more bars.
 
 ## How to use
 > Note! this theme will likely not work very well together with others.
@@ -66,3 +72,9 @@ Similarly, **I would strongly advise you not to use this theme for a presentatio
 
 As for my stylesheet, I grant you full permission to use it and modify it as you please, but I would be glad if you credited me :)
 
+## Exporting
+For the animations to work, it is crucial that you export in a format that supports them. I suggest HTML, but keep in mind that it will be less portable than, say, a PDF. When handing or sending things many people will want a PDF or PowerPoint file, so do make sure your presentation doesn't look odd in those formats!
+
+A guide on how to export can be found in ![](Marp's documentation).
+
+If you need portability, one decent suggestion is using a free and static website host, like Netlify, so you can access the presentation without the dependencies. _(This project is NOT affiliated with or sponsored by Netlify, it's merely a suggestion)_
