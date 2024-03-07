@@ -14,8 +14,6 @@ It's even got hover effects!
 Note the use of the pinging symbol as a page index.   While it looks best for 25 pages, you can expand it by adding more bars.
 
 ## How to use
-> Note! this theme will likely not work very well together with others.
-
 ### Template
 1. Download this GitHub repository, either by downloading the latest release .zip or cloning.
 2. Download/extract the necessary third-party assets. See "Mining for assets"
@@ -25,6 +23,8 @@ Note the use of the pinging symbol as a page index.   While it looks best for 25
   - assets/images
 4. Follow the guide ![](here) to assign the theme, or look at the configurations I left in the .vscode folder
 ### Into existing project
+> Note! this theme will likely not work very well together with others.
+
 1. Download this GitHub repository, either by downloading the latest release .zip or cloning.
 2. Put the files where you'd like them, but make the necessary modifications to integrate it.
 3. Download/extract the necessary third-party assets. See "Mining for assets"
@@ -72,9 +72,11 @@ Similarly, **I would strongly advise you not to use this theme for a presentatio
 
 As for my stylesheet, I grant you full permission to use it and modify it as you please, but I would be glad if you credited me :)
 
-## Exporting
-For the animations to work, it is crucial that you export in a format that supports them. I suggest HTML, but keep in mind that it will be less portable than, say, a PDF. When handing or sending things many people will want a PDF or PowerPoint file, so do make sure your presentation doesn't look odd in those formats!
+## Exporting and presenting
+For the animations to work, it is crucial that you export in a format that supports them. I suggest HTML, but keep in mind that it will be less portable than, say, a PDF. 
+
+When handing or sending things many people will want a PDF or PowerPoint file, so do make sure your presentation doesn't look odd in those formats!
 
 A guide on how to export can be found in ![](Marp's documentation).
 
-If you need portability, one decent suggestion is using a free and static website host, like Netlify, so you can access the presentation without the dependencies. _(This project is NOT affiliated with or sponsored by Netlify, it's merely a suggestion)_
+If you need portability, one decent suggestion is using a free and static website host, like Netlify, so you can access the presentation without the dependencies. This is particularly preferable, since Netlify can integrate and be dynamically updated with GitHub repositories. You could, for example, fork this repo and bind it to your Netlify website. _(This project is NOT affiliated with or sponsored by Netlify, it's merely a suggestion)_
