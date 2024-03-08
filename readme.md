@@ -53,7 +53,7 @@ Resource packs can be replaced by just deleting the prior and importing a new on
   > -    images
 
 ### Using the theme as an iteration zero
-1. Follow the common steps. You won't need to do more
+Follow the common steps. You won't need to do more :)
 
 ### Into existing project
 > Note! this theme will likely not work very well together with others.
@@ -100,7 +100,7 @@ For credits sake, I have to mention that this menu was originally based on [this
 
 ## Mining for assets
 ### Font
-By default, this theme uses Minecraftis for the font (which you can [find here](https://www.dafont.com/minecraftia.font)). [Minecraft Seven](https://fontstruct.com/fontstructions/show/2206218/minecraft-seven-classic) also works great.
+By default, this theme uses Minecraftia for the font (which you can [find here](https://www.dafont.com/minecraftia.font)). [Minecraft Seven](https://fontstruct.com/fontstructions/show/2206218/minecraft-seven-classic) also works great.
 
 ### Resource/texture pack
 This stylesheet sources almost all graphics from a resource pack.
