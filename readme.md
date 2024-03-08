@@ -24,9 +24,9 @@ Note the use of the pinging symbol as a page index.   While it looks best for 25
 2. Download/extract the necessary third-party assets. See "Mining for assets"
 3. Put them by the project root, according to the patterns defined in the CSS file, unless you wish to change it:
   > assets/
-  >      fonts
-  >      texturepack <-- put textures here!
-  >      images
+  > -    fonts
+  > -    texturepack <-- put textures here!
+  > -    images
 4. Follow the guide [here]() to assign the theme, or look at the configurations I left in the .vscode folder
 ### Into existing project
 > Note! this theme will likely not work very well together with others.
@@ -36,9 +36,9 @@ Note the use of the pinging symbol as a page index.   While it looks best for 25
 3. Download/extract the necessary third-party assets. See "Mining for assets"
 4. Put them by the project root, according to the patterns defined in the CSS file, unless you wish to change it:
   > assets/
-  >      fonts
-  >      texturepack <-- put textures here!
-  >      images
+  > -    fonts
+  > -    texturepack <-- put textures here!
+  > -    images
 5. Follow the guide [here]() to assign the theme, or look at the configurations I left in the .vscode folder
 
 ### Main menu
