@@ -31,6 +31,8 @@ Resource packs can be replaced by just deleting the prior and importing a new on
 ---
 
 ## How to use
+> No guide is provided for Marp CLI. I assume anyone using it is knowledgable enough to do the proper steps themselves, though you can use part of this tutorial.
+
 #### Prerequisites
 ##### Necessary
 - [Visual Studio Code](https://code.visualstudio.com/) or [VSCodium](https://vscodium.com/)
