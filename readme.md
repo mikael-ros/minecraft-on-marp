@@ -28,7 +28,7 @@ Note the use of the pinging symbol as a page index.   While it looks best for 25
 - CSS and Markdown knowhow
 ##### Extra
 - [WinRar](https://www.win-rar.com/) or other Zip tool (if using)
-- [Git](https://git-scm.com/) and [basic git knowledge] (if using)
+- [Git](https://git-scm.com/) and [basic git knowledge](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository) (if using)
 - [Minecraft](https://www.minecraft.net/en-us) installed, to extract textures (if using default)
 
 ### Common steps
