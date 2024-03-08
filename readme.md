@@ -55,6 +55,8 @@ Resource packs can be replaced by just deleting the prior and importing a new on
 ### Using the theme as an iteration zero
 Follow the common steps. You won't need to do more :)
 
+You can however, optionally, remove/change the .gitgnore to let you upload the exported textures. Please consult the proper terms of service of GitHub and the laws of your country as to wheter you can actually do this.
+
 ### Into existing project
 > Note! this theme will likely not work very well together with others.
 
