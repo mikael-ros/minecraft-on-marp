@@ -6,11 +6,14 @@ Originally made for a Minecraft presentation I held in a networking course, wher
 ## Preview
 ### Main menu
 ![gif](previews/menu.gif)
+
 It's even got hover effects!
 ![side by side comparison](previews/sidebyside.png)
 ### Other slides
 ![first page in section](previews/firstpage.png)
+
 ![a page in a section](previews/apage.png)
+
 Note the use of the pinging symbol as a page index.   While it looks best for 25 pages, you can expand it by adding more bars.
 
 ---
@@ -21,9 +24,9 @@ Note the use of the pinging symbol as a page index.   While it looks best for 25
 2. Download/extract the necessary third-party assets. See "Mining for assets"
 3. Put them by the project root, according to the patterns defined in the CSS file, unless you wish to change it:
   > assets/
-  > >     fonts
-  > >     texturepack <-- put textures here!
-  > >     images
+  >      fonts
+  >      texturepack <-- put textures here!
+  >      images
 4. Follow the guide [here]() to assign the theme, or look at the configurations I left in the .vscode folder
 ### Into existing project
 > Note! this theme will likely not work very well together with others.
@@ -33,9 +36,9 @@ Note the use of the pinging symbol as a page index.   While it looks best for 25
 3. Download/extract the necessary third-party assets. See "Mining for assets"
 4. Put them by the project root, according to the patterns defined in the CSS file, unless you wish to change it:
   > assets/
-  > >     fonts
-  > >     texturepack <-- put textures here!
-  > >     images
+  >      fonts
+  >      texturepack <-- put textures here!
+  >      images
 5. Follow the guide [here]() to assign the theme, or look at the configurations I left in the .vscode folder
 
 ### Main menu
@@ -77,6 +80,8 @@ For obvious reasons, I won't provide or host these resources myself, since they'
 Similarly, **I would strongly advise you not to use this theme for a presentation from which you will monetarily gain** - unless you get written permission from both the font author AND Mojang or replace these assets with ones you have rights to use. 
 
 As for my stylesheet, I grant you full permission to use it and modify it as you please, but I would be glad if you credited me :)
+
+---
 
 ## Exporting and presenting
 For the animations to work, it is crucial that you export in a format that supports them. I suggest HTML, but keep in mind that it will be less portable than, say, a PDF. 
