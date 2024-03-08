@@ -1,0 +1,314 @@
+/* @theme minecraft-on-marp */
+/* @size 4:3 false */
+/* @size 16:9 true */
+/* @size 4 21cm 29.7cm */
+
+@import 'default';
+
+:root{
+    --gray: #C7BDB6;
+    --darker-gray: #7F7F7F;
+    --dirt-color: #79553A;
+    --grass-color: #649F3B;
+
+    --sky-color: #83A5FB; 
+
+    --text-color: #DDD;
+}
+
+@font-face {
+    font-family: Minecraft;
+    src: url(../assets/fonts/minecraft-seven-classic.ttf);
+}
+
+*{
+    font-family: Minecraft;  
+    text-shadow: 2pt 2pt #000A;
+    font-size: 18pt;
+}
+
+blockquote{
+    margin: 0;
+    padding: 0.5em 1em;
+}
+
+section{
+    box-sizing: border-box;
+
+    background-color: var(--sky-color);
+    background-repeat: no-repeat;
+
+    border-image: url(../assets/borders/emerald_block.png) 16 / 16px / 0 round;
+}
+
+h1{
+    color: var(--gray);
+    margin: 0 0 0.5em 0;
+    padding: 0;
+    font-size: 1.25rem;
+}
+
+h2 {font-size: 1rem;}
+h3 {font-size: 0.9rem;}
+h4 {font-size: 0.8rem; color: var(--grass-color);}
+
+h2, h3{
+    margin: 0 0 0.3em 0;
+    padding: 0;
+    color: var(--darker-gray);
+}
+
+h1, h2, h3, h4{
+    font-weight: 100;
+}
+
+/* Sets the list icons */
+li::before{
+    image-rendering: pixelated;
+    background-image: url(../assets/defaulttexturepack/gui/sprites/hud/air.png);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    content: '';
+    display: inline-block;
+    margin-right: 10px;
+
+    height: 32px;
+    width: 32px;
+}
+
+li li::before{
+    image-rendering: pixelated;
+    background-image: url(../assets/defaulttexturepack/gui/sprites/hud/air_bursting.png);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    content: '';
+    display: inline-block;
+    margin-right: 20px;
+
+    height: 32px;
+    width: 32px;
+}
+
+
+li{
+    color: var(--text-color);
+
+    list-style: none;
+    font-size: 0.9em;
+}
+
+p{
+    color: var(--text-color);
+}
+
+img {
+    background-color: transparent!important;
+    border: 4px solid #000;
+    box-shadow: inset -16px -32px #0006, inset 16px 16px #FFF7;
+}
+
+img[alt~="icon"]{
+    border: none;
+    box-shadow: none;
+    image-rendering: pixelated !important;
+    position: absolute;
+    width: 32px !important;
+    height: 32px !important;
+    bottom: 32px;
+    left: 32px;
+    z-index:999;
+}
+
+img[alt~="icon"]:nth-of-type(2){
+    left: 80px;  
+}
+
+blockquote{
+    font-size: 0.7em;
+    color: var(--sky-color);
+}
+
+pre{
+    margin: 0;
+}
+
+/* Minecraft menu */
+
+section.menu{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    background-image: url(../assets/panorama.png);
+    background-size: 5940px 4200px;
+    font-size: 18pt;
+    border: 0;
+    animation-name: pancam;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+section.menu pre{
+    margin: 0;
+    padding: 0;
+    width: 5940px;
+    height: 4200px;
+    background: none;
+    border: 0;
+    position: absolute;
+    z-index:0;
+    backdrop-filter: blur(0px)
+}
+
+section.menu h1 {
+    position: absolute;
+    top: 25%;
+    left: 67%;
+    text-align: center;
+    transform: rotate(-15deg);
+    color: yellow;
+    text-shadow: 4px 4px #000A;
+    animation-name: text;
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    white-space: nowrap;
+}
+
+/* Animation for yellow menu text */
+@keyframes text {
+    0%   {transform: rotate(-15deg) scale(1);}
+    50%  {transform: rotate(-15deg) scale(1.1);}
+    100% {transform: rotate(-15deg) scale(1);}
+}
+
+section.menu img{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    object-fit:cover;
+    border:none;
+    box-shadow: none;
+    image-rendering: pixelated;
+}
+
+section.menu img:nth-of-type(1){
+    width: 70%;
+    margin-bottom: -11%;
+}
+section.menu img:nth-of-type(2){
+    width: 35%;
+    margin-bottom: 7%;
+}
+
+section.menu *, section.menu ::before, section.menu ::after {
+    z-index: 2;
+    box-sizing: border-box;	margin: 0; padding: 0;
+}
+
+/* Animates the background movement */
+@keyframes pancam {
+    0%   {background-position: -1000px -2000px;}
+    25%  {background-position: -2000px -1750px;}
+    50%  {background-position: -3000px -1750px;}
+    100% {background-position: -4000px -2000px;}
+}
+
+/* The menu layout */
+section.menu ul {
+    --btn-size: 43pt;
+    display: grid;
+    grid-template-columns: var(--btn-size) calc(var(--btn-size) * 10) var(--btn-size);
+    grid-template-rows: repeat(3, var(--btn-size)) 16px var(--btn-size);
+    grid-template-areas:
+    '. first .'
+    '. second .'
+    '. third .'
+    '. .  .'
+    'lang fourth access'
+    ;
+    grid-gap: 12px;
+}
+
+/* Sets all the button positions... theres probably a better way of doing this */
+section.menu ul li:nth-of-type(1){ grid-area: first;}
+section.menu ul li:nth-of-type(2){ grid-area: second;}
+section.menu ul li:nth-of-type(3){ grid-area: third;}
+section.menu ul li:nth-of-type(4){ grid-area: lang;}
+section.menu ul li:nth-of-type(5){ grid-area: fourth; width: 49%}
+section.menu ul li:nth-of-type(6){ grid-area: fourth; margin-left: 52%; width: 49%}
+section.menu ul li:nth-of-type(7){ grid-area: access}
+
+section.menu ul li img {
+    width: 100%; height: 100%;
+    object-fit: contain;
+}
+
+section.menu ul li:nth-of-type(7) img {
+    padding: 0pt;
+    padding-bottom: 4pt;
+}
+
+section.menu ul li::before{
+    background: none;
+    width: 0;
+}
+
+/* Minecraft button */
+section.menu ul li {
+    display: flex;
+    width: 100%; height: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    user-select: none;
+
+    background: #999 url(../assets/defaulttexturepack/gui/sprites/widget/button.png) center / cover;
+    image-rendering: pixelated;
+    border: 2px solid #000;
+    list-style: none;
+    align-items:center;
+    justify-content:center;
+
+    color: #DDD;
+    text-shadow: 2px 2px #000A;
+    
+}
+
+/* Mouse over */
+section.menu ul li:hover {
+    background-color: rgba(100, 100, 255, .45);
+    text-shadow: 2px 2px #202013CC;
+    border: 3px solid white;
+}
+
+section.menu ul li:active {
+    box-shadow: inset -2px -4px #0004, inset 2px 2px #FFF5;
+}
+
+/* Button title */
+section.menu h2{
+    position: absolute;
+    bottom: 0;
+    color: #DDD;
+    font-size: 18pt;
+}
+
+section.menu h2:nth-of-type(1){
+    left: 5px;
+    text-align: left;
+}
+
+section.menu h2:nth-of-type(2){
+    right: 5px;
+    text-align: right;
+}
+
+section.menu h2:nth-of-type(2):hover{
+    text-decoration: underline;
+    text-decoration-thickness: 4pt;
+}

@@ -1,5 +1,5 @@
 {
     "markdown.marp.themes": [
-        "minecraftonmarp.css"
+        "css/minecraft-on-marp.css"
     ]
 }

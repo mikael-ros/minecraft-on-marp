@@ -10,13 +10,23 @@ Originally made for a Minecraft presentation I held in a networking course, wher
 ![gif](previews/menu.gif)
 
 It's even got hover effects!
-![side by side comparison](previews/sidebyside.png)
+
+![game](previews/realmenu.png)
+![marp](previews/marpmenu.png)
+
+This is the real menu compared to mine.
 ### Other slides
 ![first page in section](previews/firstpage.png)
 
 ![a page in a section](previews/apage.png)
 
 Note the use of the pinging symbol as a page index.   While it looks best for 25 pages, you can expand it by adding more bars.
+### Other resource packs
+Resource packs can be replaced by just deleting the prior and importing a new one, see the following examples for how the look can be modified by doing this! Keep in mind borders will need to be regenerated after switching.
+
+![default](previews/default.png)
+![faithful](previews/faithful.png)
+![sphax](previews/sphax.png)
 
 ---
 
@@ -32,24 +42,53 @@ Note the use of the pinging symbol as a page index.   While it looks best for 25
 - [Minecraft](https://www.minecraft.net/en-us) installed, to extract textures (if using default)
 
 ### Common steps
-1. Download this GitHub repository, either by downloading the latest release .zip or cloning. Delete the previews folder if you wish.
+1. Download this GitHub repository, either by downloading the latest ``release.zip`` or cloning. Delete the previews folder if you wish.
 2. Download/extract the necessary third-party assets. See "Mining for assets"
 3. Place them according to the patterns defined in the CSS file, unless you wish to change it:
   > assets/
   > -    fonts
   > -    texturepack <-- put textures here!
   > -    images
-4. Follow the guide [here](https://yoanbernabeu.github.io/MARP-Template-Library/docs/intro/) to assign the theme, or look at the configurations I left in the .vscode folder
+
+### Using the theme as an iteration zero
+1. Follow the common steps. You won't need to do more
 
 ### Into existing project
 > Note! this theme will likely not work very well together with others.
 
 1. Follow the common steps, but put the files where you'd like them and make the necessary modifications to integrate it.
+2. Modify your ``.vscode/settings.json`` to include the following:
+```
+  ...
+  {
+      "markdown.marp.themes": [
+          ...
+          "path/to/the-css-file.css"
+          ...
+      ]
+  }
+  ...
+```
+
+### Using a direct link to the .css file
+> This option will make it more difficult to modify the style, and you're at the mercy of any updates I make in the future...
+
+1. Follow the common steps, but don't download the repo, just get the assets and put them in the correct folders.
+2. Modify your ``.vscode/settings.json`` to include the following:
+```
+  ...
+  {
+      ...
+      "markdown.marp.themes": [
+          "https://raw.githubusercontent.com/..."
+      ]
+      ...
+  }
+  ...
+```
 
 ### Main menu
-The main menu is defined inline, by importing the main-menu.css file. See the code snippet in [example-menu.md](example/example-menu.md) to see how you should implement it.
-
-With knowledge of CSS, you can modify these to add more buttons.
+The main menu is created by declaring a section as a menu section. See the code snippet in [example.md](example/example.md) to see how you should implement it. You will need to modify the code accordingly if you don't want to use the same button layout.
 
 The menu is implemented by forcing and choking list elements to behave like buttons. This is not only cruel, but extremely yank. Feel free to provide a better solution if you have one.
 
