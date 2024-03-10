@@ -1,15 +1,23 @@
 /* @theme minecraft-on-marp */
-/* @size 4:3 false */
 /* @size 16:9 true */
-/* @size 4 21cm 29.7cm */
 
 @import 'default';
 
+
+/* -------------- */
+/* Common  slides */
+/* -------------- */
+
+
+/* Color library */
 :root{
     --gray: #C7BDB6;
     --darker-gray: #7F7F7F;
     --dirt-color: #79553A;
     --grass-color: #649F3B;
+
+    --text-color: #DDD;
+    --text-shadow: #000A;
 
     --sky-color: #83A5FB; 
 
@@ -23,43 +31,72 @@
 
 *{
     font-family: Minecraft;  
-    text-shadow: 2pt 2pt #000A;
-    font-size: 18pt;
-}
-
-blockquote{
-    margin: 0;
-    padding: 0.5em 1em;
+    text-shadow: 2pt 2pt var(--text-shadow);
+    color: var(--text-color);
+    font-size: 16pt;
 }
 
 section{
-    box-sizing: border-box;
+    box-sizing: border-box;	
 
     background-color: var(--sky-color);
     background-repeat: no-repeat;
 
+    /* Default border image */
     border-image: url(../assets/borders/emerald_block.png) 16 / 16px / 0 round;
 }
 
-h1{
-    color: var(--gray);
-    margin: 0 0 0.5em 0;
-    padding: 0;
-    font-size: 1.25rem;
-}
+h1, h2, h3, h4{font-weight: 100; padding: 0;}
 
-h2 {font-size: 1rem;}
-h3 {font-size: 0.9rem;}
-h4 {font-size: 0.8rem; color: var(--grass-color);}
+h1{
+    margin: 0 0 0.5em 0;
+    color: var(--gray);
+}
 
 h2, h3{
     margin: 0 0 0.3em 0;
-    padding: 0;
     color: var(--darker-gray);
 }
 
-h1, h2, h3, h4{
-    font-weight: 100;
+h4 {color: var(--grass-color);}
+
+blockquote{
+    margin: 0;
+    padding: 0.5em 1em;
+
+    font-size: 0.7em;
+    color: var(--sky-color);
+}
+
+/* Slide image caption */
+section > p:first-of-type, section > p:first-of-type a {
+    color: var(--darker-gray);
+    text-align: right;
+}
+
+section > p:first-of-type {
+    position: absolute;
+    right: 26px;
+    bottom: 50px;
+}
+
+section > p:first-of-type a {
+    font-size: 1em;
+}
+
+/* Subcaption */
+section > p:first-of-type > em{
+    opacity: 65%;
+    font-size: 0.9em;
+}
+
+section > p:first-of-type > em{
+    color: var(--darker-gray);
+}
+
+li{
+    list-style: none;
+    font-size: 0.9em;
 }
 
 /* Sets the list icons */
@@ -76,6 +113,7 @@ li::before{
     width: 32px;
 }
 
+/* Nested list items */
 li li::before{
     image-rendering: pixelated;
     background-image: url(../assets/defaulttexturepack/gui/sprites/hud/air_bursting.png);
@@ -89,22 +127,14 @@ li li::before{
     width: 32px;
 }
 
-
-li{
-    color: var(--text-color);
-
-    list-style: none;
-    font-size: 0.9em;
-}
-
-p{
-    color: var(--text-color);
+pre{
+    margin: 0;
 }
 
 img {
-    background-color: transparent!important;
-    border: 4px solid #000;
-    box-shadow: inset -16px -32px #0006, inset 16px 16px #FFF7;
+    background-color: transparent !important;
+    border: 4px solid black;
+    box-shadow: inset -16px -32px var(--text-shadow), inset 16px 16px var(--darker-gray);
 }
 
 img[alt~="icon"]{
@@ -123,53 +153,98 @@ img[alt~="icon"]:nth-of-type(2){
     left: 80px;  
 }
 
-blockquote{
-    font-size: 0.7em;
-    color: var(--sky-color);
-}
 
-pre{
-    margin: 0;
-}
 
+
+
+
+
+
+/* -------------- */
 /* Minecraft menu */
+/* -------------- */
+
 
 section.menu{
     display: flex;
-    justify-content: center; 
     align-items: center;
     flex-direction: column;
-    background-color: #fff;
+
     background-image: url(../assets/panorama.png);
     background-size: 5940px 4200px;
-    font-size: 18pt;
     border: 0;
+    font-size: 18pt;
+
     animation-name: pancam;
     animation-duration: 120s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
+/* Animates the background movement */
+@keyframes pancam {
+    0%   {background-position: -1000px -2000px;}
+    25%  {background-position: -2000px -1750px;}
+    50%  {background-position: -3000px -1750px;}
+    100% {background-position: -4000px -2000px;}
+}
+
+/* Allows enabling of blur */
 section.menu pre{
-    margin: 0;
-    padding: 0;
+    position: absolute;
+
     width: 5940px;
     height: 4200px;
+
     background: none;
+    backdrop-filter: blur(0px);
     border: 0;
-    position: absolute;
+    
     z-index:0;
-    backdrop-filter: blur(0px)
+}
+
+/* Disable slide image caption behaviour */
+section.menu > p:first-of-type{
+    position: relative;
+    right: 0;
+    bottom: 0;
+}
+
+section.menu img{
+    display: flex; 
+   
+    margin: 0 auto;
+    padding: 0;
+
+    object-fit: cover;
+
+    border: none;
+    box-shadow: none;
+    
+}
+
+/* Minecraft */
+section.menu img:nth-of-type(1){
+    width: 70%;
+    margin-bottom: -11%;
+}
+
+/* Java Edition */
+section.menu img:nth-of-type(2){
+    width: 35%;
+    margin-bottom: 5%;
 }
 
 section.menu h1 {
-    position: absolute;
-    top: 25%;
-    left: 67%;
-    text-align: center;
+    position: relative;
+    top: -23%;
+    left: 31%;
     transform: rotate(-15deg);
+
     color: yellow;
-    text-shadow: 4px 4px #000A;
+    text-align: left;
+    text-shadow: 4px 4px var(--text-shadow);
+
     animation-name: text;
     animation-duration: 0.75s;
     animation-iteration-count: infinite;
@@ -184,39 +259,12 @@ section.menu h1 {
     100% {transform: rotate(-15deg) scale(1);}
 }
 
-section.menu img{
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    margin: 0 auto;
-    padding: 0;
-    object-fit:cover;
-    border:none;
-    box-shadow: none;
-    image-rendering: pixelated;
-}
-
-section.menu img:nth-of-type(1){
-    width: 70%;
-    margin-bottom: -11%;
-}
-section.menu img:nth-of-type(2){
-    width: 35%;
-    margin-bottom: 7%;
-}
-
+/* Essential for proper highlighting and static text size */
 section.menu *, section.menu ::before, section.menu ::after {
     z-index: 2;
     box-sizing: border-box;	margin: 0; padding: 0;
 }
 
-/* Animates the background movement */
-@keyframes pancam {
-    0%   {background-position: -1000px -2000px;}
-    25%  {background-position: -2000px -1750px;}
-    50%  {background-position: -3000px -1750px;}
-    100% {background-position: -4000px -2000px;}
-}
 
 /* The menu layout */
 section.menu ul {
@@ -229,30 +277,26 @@ section.menu ul {
     '. second .'
     '. third .'
     '. .  .'
-    'lang fourth access'
+    'lang duo access'
     ;
     grid-gap: 12px;
 }
 
 /* Sets all the button positions... theres probably a better way of doing this */
-section.menu ul li:nth-of-type(1){ grid-area: first;}
+section.menu ul li:nth-of-type(1){ grid-area: first; }
 section.menu ul li:nth-of-type(2){ grid-area: second;}
-section.menu ul li:nth-of-type(3){ grid-area: third;}
-section.menu ul li:nth-of-type(4){ grid-area: lang;}
-section.menu ul li:nth-of-type(5){ grid-area: fourth; width: 49%}
-section.menu ul li:nth-of-type(6){ grid-area: fourth; margin-left: 52%; width: 49%}
-section.menu ul li:nth-of-type(7){ grid-area: access}
+section.menu ul li:nth-of-type(3){ grid-area: third; }
+section.menu ul li:nth-of-type(4){ grid-area: lang;  }
+section.menu ul li:nth-of-type(5){ grid-area: duo;    width: 49%                  }
+section.menu ul li:nth-of-type(6){ grid-area: duo;    margin-left: 52%; width: 49%}
+section.menu ul li:nth-of-type(7){ grid-area: access }
 
-section.menu ul li img {
-    width: 100%; height: 100%;
-    object-fit: contain;
-}
-
-section.menu ul li:nth-of-type(7) img {
-    padding: 0pt;
+/* Menu icons */
+section.menu ul li:nth-of-type(7) img, section.menu ul li:nth-of-type(4) img{
     padding-bottom: 4pt;
 }
 
+/* Removes list icons */
 section.menu ul li::before{
     background: none;
     width: 0;
@@ -261,48 +305,50 @@ section.menu ul li::before{
 /* Minecraft button */
 section.menu ul li {
     display: flex;
-    width: 100%; height: 100%;
+    align-items:center;
+    justify-content:center;
+    width: 100%; 
+    height: 100%;
+
     cursor: pointer;
     overflow: hidden;
     white-space: nowrap;
     user-select: none;
 
-    background: #999 url(../assets/defaulttexturepack/gui/sprites/widget/button.png) center / cover;
+    background: url(../assets/defaulttexturepack/gui/sprites/widget/button.png) center / cover;
     image-rendering: pixelated;
-    border: 2px solid #000;
+    border: 2px solid black;
     list-style: none;
-    align-items:center;
-    justify-content:center;
-
-    color: #DDD;
-    text-shadow: 2px 2px #000A;
-    
+    color: var(--text-color);
+    text-shadow: 2px 2px var(--text-shadow);
 }
 
 /* Mouse over */
 section.menu ul li:hover {
-    background-color: rgba(100, 100, 255, .45);
     text-shadow: 2px 2px #202013CC;
     border: 3px solid white;
 }
 
-section.menu ul li:active {
-    box-shadow: inset -2px -4px #0004, inset 2px 2px #FFF5;
+/* Menu icons mouse over */
+section.menu ul li:nth-of-type(7):hover img, section.menu ul li:nth-of-type(4):hover img{
+    padding-bottom: calc(4pt - 1px);
 }
 
-/* Button title */
+/* Bottom text */
 section.menu h2{
     position: absolute;
     bottom: 0;
-    color: #DDD;
-    font-size: 18pt;
+    color: var(--text-color);
+    font-size: 0.9rem;
 }
 
+/* Version */
 section.menu h2:nth-of-type(1){
     left: 5px;
     text-align: left;
 }
 
+/* Copyright */
 section.menu h2:nth-of-type(2){
     right: 5px;
     text-align: right;

@@ -30,28 +30,12 @@ theme: minecraft-on-marp
 
 ---
 
-<!-- Scoped style -->
 <style scoped>
     section {
-        background-color: rgb(220,220,240);
         background-image: url(../assets/images/example-background.png), linear-gradient(white, grey);
         background-blend-mode: multiply;
         border-image: url(../assets/borders/slice_of_cake2.png) 16 / 16px / 0 round;
     }
-
-    h2{
-        margin: 0 0 0.5cm 0;
-        mix-blend-mode: soft-light;
-    }
-    
-    img{
-        display: inline-block;
-        height: 200px;
-        object-fit:cover;
-        float:left;
-        border:none;
-    }
-    
 
     li::before{
         background-image: url(../assets/defaulttexturepack/gui/sprites/icon/unseen_notification.png);
@@ -71,7 +55,6 @@ theme: minecraft-on-marp
 
 ---
 
-<!-- Scoped style -->
 <style scoped>
     section {
         background-color: rgb(200,180,180);
@@ -81,30 +64,6 @@ theme: minecraft-on-marp
         background-size: 64px;
         image-rendering: pixelated;
         border-image: url(../assets/borders/dark_oak_log.png) 16 / 16px / 0 round;
-    }
-
-    img{
-        position: absolute;
-        image-rendering: auto;
-        z-index: 1;
-    }
-
-    p:first-of-type{
-        position: absolute;
-        right: 26px;
-        bottom: 50px;
-        color: var(--color-two);
-        text-align: right;
-        font-size: 0.7em;
-    }
-
-    p:first-of-type em{
-        opacity: 65%;
-        font-size: 0.9em;
-    }
-
-    em{
-        color: var(--color-two);
     }
 
     li::before{
@@ -128,7 +87,6 @@ On this slide we have some icons for indexing. Pretty neat.
 
 ---
 
-<!-- Scoped style -->
 <style scoped>
     section {
         background-color: rgb(100,100,100);
@@ -137,18 +95,6 @@ On this slide we have some icons for indexing. Pretty neat.
         background-size: 2000px;
         background-position: -400px -40px, 0 0;
         border-image: url(../assets/borders/oak_planks.png) 16 / 16px / 0 round;
-    }
-
-    * {
-        z-index: 2;
-    }
-
-    section > p:first-of-type{
-        position: absolute;
-        right: 26px;
-        bottom: 10px;
-        font-size: 0.7em;
-        color: var(--color-two);
     }
 
     /* Specific icons per li element */
@@ -164,11 +110,7 @@ On this slide we have some icons for indexing. Pretty neat.
     li:nth-of-type(4)::before{
         background-image: url(../assets/defaulttexturepack/item/cake.png);
     }
-
-    
 </style>
-
-
 
 ![bg right:40%](https://images.unsplash.com/photo-1551647152-eb24b93db57b?q=80&w=2083&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 This is another image caption :o
