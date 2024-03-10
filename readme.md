@@ -7,31 +7,32 @@ Originally made for a Minecraft presentation I held in a networking course, wher
 
 ## Preview gallery
 ### Main menu
-![gif](previews/menu.gif)
 
-It's even got hover effects!
+Real menu            |  My Marp menu
+:-------------------------:|:-------------------------:
+![In game menu](./previews/realmenu.png)  |  ![Marp recreation](./previews/marpmenu.png)
 
-![game](previews/realmenu.png)
-![marp](previews/marpmenu.png)
+It's even got hover effects! (I will add a gif when I have time)
 
-This is the real menu compared to mine.
 ### Other slides
-![first page in section](previews/firstpage.png)
 
-![a page in a section](previews/apage.png)
+Backgroundless slide           |  A slide with a background and split layout
+:-------------------------:|:-------------------------:
+![First page in section](previews/firstpage.png)  |  ![A page in a section](previews/apage.png)
+
+
+
 
 Note the use of the pinging symbol as a page index.   While it looks best for 25 pages, you can expand it by adding more bars.
 ### Other resource packs
 Resource packs can be replaced by just deleting the prior and importing a new one, see the following examples for how the look can be modified by doing this! Keep in mind borders will need to be regenerated after switching.
 
-![default](previews/default.png)
-![faithful](previews/faithful.png)
-![sphax](previews/sphax.png)
-
 ---
 
 ## How to use
 > No guide is provided for Marp CLI. I assume anyone using it is knowledgable enough to do the proper steps themselves, though you can use part of this tutorial.
+
+This theme is yank, and needs some work. You wil likely need to implement features yourself. It is to be seen as "a good place to start". If you do implement more necessities, please do either fork this repo or commit to it directly, I would love your help! 
 
 #### Prerequisites
 ##### Necessary
@@ -102,7 +103,7 @@ For credits sake, I have to mention that this menu was originally based on [this
 
 ## Mining for assets
 ### Font
-By default, this theme uses Minecraftia for the font (which you can [find here](https://www.dafont.com/minecraftia.font)). [Minecraft Seven](https://fontstruct.com/fontstructions/show/2206218/minecraft-seven-classic) also works great.
+By default, this theme uses Minecraft Seven for the font (which you can [find here](https://fontstruct.com/fontstructions/show/2206218/minecraft-seven-classic)). [Minecraftia](https://www.dafont.com/minecraftia.font) also works great.
 
 ### Resource/texture pack
 This stylesheet sources almost all graphics from a resource pack.
@@ -111,18 +112,23 @@ To use the default resource pack, follow [this guide](https://mcreator.net/wiki/
 
 ### Borders
 You'll have to make these yourself, but the process is fairly simple:
-1. In your favorite design tool*, create a square canvas. The size of it is dictated by your needs, but a basic border would be 3 x <size of texture> px in both height and width.
+1. In your favorite design tool*, create a square canvas. The size of it is dictated by your needs, but a basic border would be ``3 x size of texture`` px in both height and width.
 2. Slap your textures in there, and tile them to fill the canvas. In GIMP you can do this with the paint bucket, using the image fill tool ([see this guide](https://docs.gimp.org/2.10/en/gimp-edit-fill-pattern.html))
 3. Export it as png, and put it where you'd like. Preferably in "assets/borders". See examples for how to use.
 
-![examples]()
+This is an example of a border image, that creates a log border around a slide. I won't provide the source file, but heres a screenshot of it.
+
+Border            |  Border in use
+:-------------------------:|:-------------------------:
+![Example of border image](previews/borderexample.png) |  ![A page in a section](previews/apage.png)
+
 
 ### Panorama
 The menu uses a stitched together set of screenshots, laid out like the way the game does it  ([see this wiki article](https://minecraft.fandom.com/wiki/Panorama)). This image is provided for you, since it's nothing more than some screenshots. If you wish to create your own, use my image as reference together with [this video](https://youtu.be/F7jMd3zsjZQ?si=m4q2S2cpjCGwVApC).
 
-![example]()
+![example](assets/panorama.png)
 
-### Copyright
+### Rights
 For obvious reasons, I won't provide or host these resources myself, since they're protected under copyright law. 
 
 Similarly, **I would strongly advise you not to use this theme for a presentation from which you will monetarily gain** - unless you get written permission from both the font author AND Mojang or replace these assets with ones you have rights to use. 

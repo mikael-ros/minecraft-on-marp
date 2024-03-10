@@ -21,7 +21,7 @@
 
     --sky-color: #83A5FB; 
 
-    --text-color: #DDD;
+    --text-color: #FFF;
 }
 
 @font-face {
@@ -232,12 +232,12 @@ section.menu img:nth-of-type(1){
 /* Java Edition */
 section.menu img:nth-of-type(2){
     width: 35%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
 section.menu h1 {
     position: relative;
-    top: -23%;
+    top: -20%;
     left: 31%;
     transform: rotate(-15deg);
 
