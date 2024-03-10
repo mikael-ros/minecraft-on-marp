@@ -32,7 +32,7 @@ Resource packs can be replaced by just deleting the prior and importing a new on
 ## How to use
 > No guide is provided for Marp CLI. I assume anyone using it is knowledgable enough to do the proper steps themselves, though you can use part of this tutorial.
 
-This theme is yank, and needs some work. You wil likely need to implement features yourself. It is to be seen as "a good place to start". If you do implement more necessities, please do either fork this repo or commit to it directly, I would love your help! 
+This theme is yank, and needs some work. You will likely need to implement features yourself. It is to be seen as "a good place to start". If you do implement more necessities, please do either fork this repo or commit to it directly, I would love your help! 
 
 #### Prerequisites
 ##### Necessary
@@ -71,23 +71,6 @@ You can however, optionally, remove/change the .gitgnore to let you upload the e
           "path/to/the-css-file.css"
           ...
       ]
-  }
-  ...
-```
-
-### Using a direct link to the .css file
-> This option will make it more difficult to modify the style, and you're at the mercy of any updates I make in the future...
-
-1. Follow the common steps, but don't download the repo, just get the assets and put them in the correct folders.
-2. Modify your ``.vscode/settings.json`` to include the following:
-```
-  ...
-  {
-      ...
-      "markdown.marp.themes": [
-          "https://raw.githubusercontent.com/..."
-      ]
-      ...
   }
   ...
 ```
