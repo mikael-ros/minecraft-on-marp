@@ -1,9 +1,9 @@
 # Minecraft on Marp!
-A yanky theme that uses Minecraft assets to create an accurate Minecraft experience.
-
-[Marp](https://marp.app/) is a tool for creating presentations from Markdown. It's not very difficult to learn, and once you know the basics, it's a lot more performant, efficient and portable than PowerPoint. This project is in no way officially tied to or sponsored by Marp, but it is dependent on it's toolset.
+**A yanky theme that uses Minecraft assets to create an accurate Minecraft experience.**
 
 Originally made for a Minecraft presentation I held in a networking course, where I measured the network usage of Minecraft. See [this repo](https://github.com/mikael-ros/wiresharkR) for some more tools I used to make graphs!
+
+_[Marp](https://marp.app/) is a tool for creating presentations from Markdown. It's not very difficult to learn, and once you know the basics, it's a lot more performant, efficient and portable than PowerPoint. This project is in no way officially tied to or sponsored by Marp, but it is dependent on it's toolset._
 
 ## Preview gallery
 ### Main menu
@@ -12,7 +12,7 @@ Real menu            |  My Marp menu
 :-------------------------:|:-------------------------:
 ![In game menu](./previews/realmenu.png)  |  ![Marp recreation](./previews/marpmenu.png)
 
-It's even got hover effects! (I will add a gif when I have time)
+It's even got hover effects! _(I will add a gif when I have time)_
 
 ### Other slides
 
@@ -50,7 +50,7 @@ This theme is yank, and needs some work. You wil likely need to implement featur
 3. Place them according to the patterns defined in the CSS file, unless you wish to change it:
   > assets/
   > -    fonts
-  > -    texturepack <-- put textures here!
+  > -    defaulttexturepack <-- put textures here!
   > -    images
 
 ### Using the theme as an iteration zero
