@@ -114,7 +114,8 @@ The menu uses a stitched together set of screenshots, laid out like the way the 
 ### Rights
 For obvious reasons, I won't provide or host these resources myself, since they're protected under copyright law. 
 
-Similarly, **I would strongly advise you not to use this theme for a presentation from which you will monetarily gain** - unless you get written permission from both the font author AND Mojang or replace these assets with ones you have rights to use. 
+> [!CAUTION]
+> Similarly, **I would strongly advise you not to use this theme for a presentation from which you will monetarily gain** - unless you get written permission from both the font author AND Mojang or replace these assets with ones you have rights to use. 
 
 As for my stylesheet, I grant you full permission to use it and modify it as you please, but I would be glad if you credited me :)
 
