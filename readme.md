@@ -1,18 +1,20 @@
-# Minecraft on Marp!
+# 🪵 Minecraft on Marp!
 **A yanky theme that uses Minecraft assets to create an accurate Minecraft experience.**
 
-Originally made for a Minecraft presentation I held in a networking course, where I measured the network usage of Minecraft. See [this repo](https://github.com/mikael-ros/wiresharkR) for some more tools I used to make graphs!
+Originally made for a Minecraft presentation I held in a networking course, where me and my project partners measured, analyzed, and presented the network usage of Minecraft. This presentation template is a work completely of my own, however.
+
+_See [this repo](https://github.com/mikael-ros/wiresharkR) for some more tools I used to make graphs in that project as well!_
 
 _[Marp](https://marp.app/) is a tool for creating presentations from Markdown. It's not very difficult to learn, and once you know the basics, it's a lot more performant, efficient and portable than PowerPoint. This project is in no way officially tied to or sponsored by Marp, but it is dependent on it's toolset._
 
-## Preview gallery
+## 📺 Preview gallery
 ### Main menu
 
 Real menu            |  My Marp menu
 :-------------------------:|:-------------------------:
 ![In game menu](./previews/realmenu.png)  |  ![Marp recreation](./previews/marpmenu.png)
 
-It's even got hover effects! _(I will add a gif when I have time)_
+It's even got hover effects!
 
 ### Other slides
 
@@ -21,16 +23,15 @@ Backgroundless slide           |  A slide with a background and split layout
 ![First page in section](previews/firstpage.png)  |  ![A page in a section](previews/apage.png)
 
 
+Note the use of the pinging symbol as a page index.   While it looks best for 25 pages, you can expand it by adding more bars. As you can imagine, this is manual and not automated.
 
-
-Note the use of the pinging symbol as a page index.   While it looks best for 25 pages, you can expand it by adding more bars.
 ### Other resource packs
-Resource packs can be replaced by just deleting the prior and importing a new one, see the following examples for how the look can be modified by doing this! Keep in mind borders will need to be regenerated after switching.
+Resource packs can be replaced by just deleting the prior and importing a new one. As long as you don't change any folder names, any resource pack should act as a drop-in replacement. Keep in mind borders will need to be regenerated after switching.
 
 ---
 
-## How to use
-> No guide is provided for Marp CLI. I assume anyone using it is knowledgable enough to do the proper steps themselves, though you can use part of this tutorial.
+## 🪄 How to use
+> No guide is provided for Marp CLI. I assume anyone using the CLI is knowledgable enough to do the proper steps themselves, though you can use part of this tutorial.
 
 This theme is yank, and needs some work. You will likely need to implement features yourself. It is to be seen as "a good place to start". If you do implement more necessities, please do either fork this repo or commit to it directly, I would love your help! 
 
@@ -84,7 +85,7 @@ For credits sake, I have to mention that this menu was originally based on [this
 
 ---
 
-## Mining for assets
+## ⛏️ Mining for assets
 ### Font
 By default, this theme uses Minecraft Seven for the font (which you can [find here](https://fontstruct.com/fontstructions/show/2206218/minecraft-seven-classic)). [Minecraftia](https://www.dafont.com/minecraftia.font) also works great.
 
@@ -121,7 +122,7 @@ As for my stylesheet, I grant you full permission to use it and modify it as you
 
 ---
 
-## Exporting and presenting
+## 🎞 Exporting and presenting
 For the animations to work, it is crucial that you export in a format that supports them. I suggest HTML, but keep in mind that it will be less portable than, say, a PDF. 
 
 When handing or sending things many people will want a PDF or PowerPoint file, so do make sure your presentation doesn't look odd in those formats!
@@ -129,3 +130,8 @@ When handing or sending things many people will want a PDF or PowerPoint file, s
 A guide on how to export can be found in [Marp's extension documentation](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode).
 
 If you need portability, one decent suggestion is using a free and static website host, like [Netlify](https://www.netlify.com/), so you can access the presentation without the dependencies. This is particularly preferable, since Netlify can integrate and be dynamically updated with GitHub repositories. You could, for example, fork this repo and bind it to your Netlify website. _(This project is NOT affiliated with or sponsored by Netlify, it's merely a suggestion)_
+
+---
+
+## 🌇 A note on the future of this project
+It is highly unlikely I personally will update this project any further. This repository mostly serves as a portfolio piece and archival entry.
