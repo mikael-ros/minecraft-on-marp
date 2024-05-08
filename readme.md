@@ -1,7 +1,7 @@
 # 🪵 Minecraft on Marp!
 **A yanky theme that uses Minecraft assets to create an accurate Minecraft experience.**
 
-Originally made for a Minecraft presentation I held in a networking course, where me and my project partners measured, analyzed, and presented the network usage of Minecraft. This presentation template is a work completely of my own, however.
+Originally made for a Minecraft presentation I held in a networking course, where me and my project partners measured, analyzed, and presented the network usage of Minecraft. This presentation template is a work of my own, however.
 
 _See [this repo](https://github.com/mikael-ros/wiresharkR) for some more tools I used to make graphs in that project as well!_
 
